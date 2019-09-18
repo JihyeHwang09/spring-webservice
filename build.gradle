@@ -28,4 +28,7 @@ dependencies {
     compile 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // 스프링부트 2.0버전 이상일 경우, handlebar 버전을 0.3.0으로 사용
+    // 다른 서버 템플릿 스타터 패키지와 마찬가지로 Handlebars도 기본 경로는 src/main/resources/templates가 된다.
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
 }

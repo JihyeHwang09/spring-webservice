@@ -1,5 +1,6 @@
 package com.phang.webservice.web;
 
+import com.phang.webservice.domain.Posts;
 import com.phang.webservice.domain.PostsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,6 +26,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @AllArgsConstructor
 public class WebRestController {
+
+    private PostsRepository postsRepository;
+
     // hello 메소드의 결과인 "HelloWorld" 문자열이 JSON 형태로 반환된다.
     @GetMapping("/hello")
     public String hello() {
@@ -33,6 +37,6 @@ public class WebRestController {
 
     @PostMapping("/posts")
     public void savePosts(@RequestBody PostsSaveRequestDto dto) {
-        PostsRepository.save(dto.toEntity());
+        postsRepository.save(dto.toEntity());
     }
 }

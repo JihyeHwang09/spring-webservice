@@ -32,7 +32,7 @@ import javax.persistence.Id;
 JPA를 사용하면, DB 데이터에 작업할 때 실제 쿼리를 날리기보다는
 이 Entity 클래스를 수정하여 작업한다.
  */
-public class Posts {
+public class Posts extends BaseTimeEntity {
     // @Id: 해당 테이블의 PK 필드를 나타냄
     @Id
 

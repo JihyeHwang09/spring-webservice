@@ -1,5 +1,7 @@
-package com.phang.webservice.domain;
+package com.phang.webservice.domain.posts;
 
+import com.phang.webservice.domain.posts.Posts;
+import com.phang.webservice.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

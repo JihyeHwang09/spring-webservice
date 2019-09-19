@@ -1,7 +1,6 @@
 package com.phang.webservice.web;
 
-import com.phang.webservice.domain.Posts;
-import com.phang.webservice.domain.PostsRepository;
+import com.phang.webservice.domain.posts.PostsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

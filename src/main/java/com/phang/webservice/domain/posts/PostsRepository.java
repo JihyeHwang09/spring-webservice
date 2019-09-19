@@ -1,5 +1,6 @@
-package com.phang.webservice.domain;
+package com.phang.webservice.domain.posts;
 
+import com.phang.webservice.domain.posts.Posts;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /*

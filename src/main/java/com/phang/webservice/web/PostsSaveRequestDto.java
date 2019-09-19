@@ -1,6 +1,6 @@
 package com.phang.webservice.web;
 
-import com.phang.webservice.domain.Posts;
+import com.phang.webservice.domain.posts.Posts;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
